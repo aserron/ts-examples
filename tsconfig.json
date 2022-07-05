@@ -1,0 +1,32 @@
+{
+  "exclude": [
+    "node_modules",
+    "dist"
+  ],
+
+  "compilerOptions": {
+
+    "outDir": "./dist",
+
+    "typeRoots" : ["./node_modules/@types", "./typings"],
+
+    "module": "ESNext",
+    "moduleResolution": "Node",
+
+    "strict": true,
+
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+
+    "pretty": true,
+    "checkJs": false,
+    "allowJs": true,
+
+    "lib": [
+      "DOM",
+      "ESNext"
+    ],
+    "noImplicitReturns": false
+  }
+}
