@@ -1,10 +1,9 @@
-import * as Jest from '@jest/core';
-import {it,describe,test,expect,jest} from '@jest/globals';
+import {describe,test,expect} from '@jest/globals';
 import '@jest/types';
 import {} from '@jest/test-sequencer';
 
 import Singleton   from "../singleton";
-import * as assert from "assert";
+
 
 
 describe('Singleton pattern implementation', () => {
