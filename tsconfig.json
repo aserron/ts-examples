@@ -1,32 +1,66 @@
 {
+  "extends": "@tsconfig/node16-strictest-esm/tsconfig.json",
   "exclude": [
     "node_modules",
     "dist"
   ],
 
   "compilerOptions": {
+    "target": "es2017",
+    "module": "commonjs",
+    "lib": [
+      "es2020"
+    ],
 
+    "allowJs": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
     "outDir": "./dist",
 
-    "typeRoots" : ["./node_modules/@types", "./typings"],
-
-    "module": "ESNext",
-    "moduleResolution": "Node",
-
+    "composite": true,
     "strict": true,
+    "moduleResolution": "node",
+    "rootDirs": [
+      "."
+    ],
 
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowUnreachableCode": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "include": [
+    "./**/*.ts"
+  ],
+  "ts-node": {
+    "logError": true,
+    "compilerOptions": {
+      "target": "es2017",
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "lib": [
+        "es2020"
+      ],
 
-    "pretty": true,
-    "checkJs": false,
-    "allowJs": true,
+      "allowJs": true,
+      "declaration": true,
+      "declarationMap": true,
+      "sourceMap": true,
+      "outDir": "./dist",
+      "composite": true,
+      "strict": true,
 
-    "lib": [
-      "DOM",
-      "ESNext"
-    ],
-    "noImplicitReturns": false
+      "rootDirs": [
+        "."
+      ],
+      "allowUnreachableCode": true,
+      "allowSyntheticDefaultImports": true,
+      "esModuleInterop": true,
+
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true
+    }
   }
 }
