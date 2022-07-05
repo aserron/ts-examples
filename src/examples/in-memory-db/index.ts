@@ -1,4 +1,9 @@
-import {createObserver, Listener, BeforeSetEvent, AfterSetEvent} from "../../lib/patterns/observer";
+import {
+    createObserver,
+    Listener,
+    BeforeSetEvent,
+    AfterSetEvent
+} from "../../lib/patterns/observer";
 
 
 interface Pokemon {
